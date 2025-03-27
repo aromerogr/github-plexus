@@ -1,6 +1,14 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
+import { provideHttpClient } from '@angular/common/http';
+import { provideRouter } from '@angular/router';
 import { AppComponent } from './app/app.component';
+import { CharacterListComponent } from './app/components/character-list/character-list.component';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+bootstrapApplication(AppComponent, {
+  providers: [
+    provideHttpClient(), // Proporciona HttpClient aquí
+    provideRouter([
+      { path: '', component: CharacterListComponent }, // Ruta predeterminada
+    ]),
+  ],
+}).catch((err) => console.error(err));
