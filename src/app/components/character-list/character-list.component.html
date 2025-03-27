@@ -11,7 +11,11 @@
     </thead>
     <tbody>
       <tr *ngFor="let character of characters">
-        <td><img [src]="character.image" alt="{{ character.name }}" /></td>
+        <td>
+          <a [routerLink]="['/character', character.id]">
+            <img [src]="character.image" alt="{{ character.name }}" />
+          </a>
+        </td>
         <td>{{ character.name }}</td>
         <td>{{ character.description || "Sin descripción" }}</td>
       </tr>

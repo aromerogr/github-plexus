@@ -1,0 +1,68 @@
+/* filepath: /Users/albertoromerogrinon-local/Workspace/mi-aplicacion-angular/src/app/components/character-detail/character-detail.component.css */
+.character-detail {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.character-detail img {
+  max-width: 300px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.character-image {
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.planet-image {
+  max-width: 200px;
+  border-radius: 8px;
+}
+
+.transformations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.transformation {
+  text-align: center;
+  margin: 10px;
+}
+
+.transformation img {
+  max-width: 150px;
+  border-radius: 8px;
+}
+
+.character-detail h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.character-detail p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.not-found {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.not-found-logo {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.not-found h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.not-found p {
+  font-size: 1.2rem;
+  color: #666;
+}
